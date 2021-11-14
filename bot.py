@@ -13,6 +13,11 @@ async def on_ready():
 @client.event
 async def on_member_join(member):
     print(f'{member} has joined the server')
+    
+# When a members leaves for any reason, prints message
+@client.event
+async def on_member_remove(member):
+    print(f'{member} has left the server')
 
 
 #runs the discord bot
