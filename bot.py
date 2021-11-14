@@ -8,6 +8,11 @@ client  = commands.Bot(command_prefix = '!')
 @client.event
 async def on_ready():
     print('Bot is ready to start!')
+    
+#When a member joins prints statement 
+@client.event
+async def on_member_join(member):
+    print(f'{member} has joined the server')
 
 
 #runs the discord bot
