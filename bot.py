@@ -27,7 +27,7 @@ async def hello(ctx):
     
 
 #joke command tells joke to user from array    
-@client.command()
+@client.command(name="joke", aliases=["getjoke" , 'jokes'])
 async def joke(ctx):
     jokes = ['What’s the best thing about Switzerland? I don’t know, but the flag is a big plus.', 'Did you hear about the first restaurant to open on the moon? It had great food, but no atmosphere.', 'Do you want to hear a construction joke? Sorry, I’m still working on it.', 'What does a nosey pepper do? It gets jalapeño business. ']
     await ctx.send(f'{random.choice(jokes)}')
