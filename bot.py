@@ -22,7 +22,7 @@ async def on_member_remove(member):
 #Bot responds with message when using comand !hello
 @client.command()
 async def hello(ctx):
-    await ctx.send("Hey, hope you're well!")
+    await ctx.send(f"Hey, hope you're well {ctx.author.mention}")
 
 
 #runs the discord bot
