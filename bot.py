@@ -18,6 +18,11 @@ async def on_member_join(member):
 @client.event
 async def on_member_remove(member):
     print(f'{member} has left the server')
+    
+#Bot responds with message when using comand !hello
+@client.command()
+async def hello(ctx):
+    await ctx.send("Hey, hope you're well!")
 
 
 #runs the discord bot
